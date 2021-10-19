@@ -1,0 +1,787 @@
+<style type="text/css">
+:root{
+ 
+  }
+*{
+  padding:0;
+  margin:0;
+font-family: " Times New Roman" , sans-serif;
+}
+.header{
+ min-height: 100vh;
+   width:100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(file:///C:/Users/Dell/Desktop/pic1.jpg);
+  background-position: center;
+  background-size: cover;
+  position:relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 150px;
+}
+.nav-links ul li{
+  list-style:none;
+  display: inline-block;
+  padding: 8px 12px;
+  position:relative;
+}
+.nav-links ul li a{
+    color:	#f0ffff;
+    text-decoration:none;
+font-size: 18px;
+}
+.nav-links ul li::after{
+ content:'';
+ width: 0%;
+ height:2px;
+ background:	#e65245;
+ display: block;
+ margin:auto;
+ transition:0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.text-box{
+ width:90%;
+ color:#f0ffff;
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+text-align:center;
+}
+.text-box h1{
+ font-size: 62px;
+}
+.text-box p{
+  margin:10px 0px 40px;
+  font-size: 20px;
+  color:#f0ffff;
+}
+.hello-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#f0ffff;
+    border: 1px solid #f0ffff;
+    border-radius: 35px;
+    padding:12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+   cursor: pointer;
+}
+.hello-btn:hover{
+  border:1px solid 	#e65245;
+  background: 		#e65245;
+  transition: 1s;
+}
+.feed{
+  background: #FFEEEE; 
+background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+  
+  
+  
+
+  width:100%;
+  margin:auto;
+  padding-top:50px;
+  text-align: center;
+  padding-bottom:10px;
+}
+h1{
+  font-size:40px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+P{
+  font-size: 20px;
+  font-weight:300;
+  line-height: 22px;
+  padding-bottom:50px;
+}
+.updates{
+ flex-basis: 32px;
+border-radius: 10px;
+margin-bottom:30px;
+position:relative;
+overflow: hidden;
+
+} 
+.updates img{
+  width:80%;
+  padding-bottom: 50px;
+ 
+}
+.updates h3{
+  padding-bottom: 20px;
+}
+.footer{
+  margin:auto;
+  width:100%;
+  text-align:center;
+  padding: 18px 0;
+  background: #EDE574;  
+  background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574); 
+  background: linear-gradient(to right, #E1F5C4, #EDE574);
+  
+
+}
+.footer h4{
+  margin-bottom:  25px;
+  margin-top: 20px;
+  font-weight:600;
+}
+.icons i{
+  
+  color: #00cdac;
+  margin: 13px;
+  cursor:pointer;
+ 
+  width:35px;
+  height:85px;
+}
+.icons i:hover{
+  transform:scale(1.5);
+}
+.icons i:active{
+  transform:scale(0.9);
+}
+.team-header{
+  height:60vh;
+  width:100%;
+  background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(file:///C:/Users/Dell/Desktop/team.jpg);
+  background-size:cover;
+  background-position: center;
+  text-align:center;
+  color:#f0ffff;
+  font-size:40px;
+}
+.team-header h1{
+  padding-top:85px;
+}
+.table{
+  padding-bottom:30px;
+  background: #FFEEEE; 
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+    
+  text-align:center;
+  font-size:30px;
+}
+.table h2{
+  padding-top:50px;
+}
+.roaster{
+ justify-content:center;
+ min-height:50vh;
+ border-collapse:collapse;
+  margin:85px 210px;
+  font-size:20px;
+  min-width:70%;
+  border-radius: 5px 5px 0 0;
+ overflow:hidden; 
+ box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+.roaster thead tr{
+  background-color:#e65245;
+  color:#f0ffff;
+  text-align:center;
+  font-weigth:bold;
+}
+.roaster thead th,
+.roaster thead td{
+padding: 20px 25px;
+}
+.roaster tbody tr:nth-of-type(even){
+  background-color: #0ed2f7 ; 
+  }
+.roaster tbody tr:nth-of-type(odd){
+  background-color:  #ffdde1 ; 
+}
+.roaster tbody tr:last-of-type {
+  border-bottom: 5px solid #e65245;
+}
+.former{
+  padding-bottom:30px;
+  background: #FFEEEE; 
+background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+  
+  text-align:center;
+  font-size:30px;
+}
+.former h2{
+  padding-top:50px;
+}
+.player{
+ justify-content:center;
+ min-height:50vh;
+  border-collapse:collapse;
+  margin:25px 150px;
+  font-size:20px;
+  min-width:80%;
+  border-radius: 5px 5px 0 0;
+ overflow:hidden; 
+ box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+.player thead tr{
+  background-color:#e65245;
+  color:#f0ffff;
+  text-align:center;
+  font-weigth:bold;
+}
+.player thead th,
+.player thead td{
+padding: 20px 25px;
+}
+.player tbody tr:nth-of-type(even){
+  background-color:  #0ed2f7;
+}
+.player tbody tr:nth-of-type(odd){
+  background-color:  #ffdde1 ; 
+}
+.player tbody tr:last-of-type {
+  border-bottom: 5px solid #e65245;
+}
+.manager{
+  padding-bottom:30px;
+  background: #FFEEEE; 
+background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+  
+  text-align:center;
+  font-size:30px;
+}
+.manager h2{
+  padding-top:50px;
+}
+.manage{
+ justify-content:center;
+ min-height:20vh;
+  border-collapse:collapse;
+  margin:85px 210px;
+  font-size:20px;
+  min-width:70%;
+  border-radius: 5px 5px 0 0;
+ overflow:hidden; 
+ box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+.manage thead tr{
+  background-color:#e65245;
+  color:#f0ffff;
+  text-align:center;
+  font-weigth:bold;
+}
+.manage thead th,
+.manage thead td{
+padding: 20px 25px;
+}
+.manage tbody tr:nth-of-type(even){
+  background-color:  #0ed2f7;
+}
+.manage tbody tr:nth-of-type(odd){
+  background-color:  #ffdde1 ; 
+}
+.manage tbody tr:last-of-type {
+  border-bottom: 5px solid #e65245;
+ 
+}
+.content{
+  padding-bottom:30px;
+  background: #FFEEEE; 
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+    
+  text-align:center;
+  font-size:30px;
+}
+.content h2{
+  padding-top:50px;
+}
+.creator{
+ justify-content:center;
+ min-height:30vh;
+  border-collapse:collapse;
+  margin:85px 210px;
+  font-size:20px;
+  min-width:70%;
+  border-radius: 5px 5px 0 0;
+ overflow:hidden; 
+ box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+.creator thead tr{
+  background-color:#e65245;
+  color:#f0ffff;
+  text-align:center;
+  font-weigth:bold;
+}
+.creator thead th,
+.creator thead td{
+padding: 20px 25px;
+}
+.creator tbody tr:last-of-type {
+  border-bottom: 5px solid #e65245;
+}
+.creator tbody tr:nth-of-type(even){
+  background-color: #0ed2f7;
+}
+.creator tbody tr:nth-of-type(odd){
+  background-color:  #ffdde1 ; 
+}
+.ach-header{
+  height:60vh;
+  width:100%;
+  background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(file:///C:/Users/Dell/Desktop/pic3.jpg);
+  background-size:cover;
+  background-position: center;
+  text-align:center;
+  color:#f0ffff;
+  font-size:40px;
+}
+.ach-header h1{
+  padding-top: 75px;
+}
+.ach{
+  padding-bottom:30px;
+  background: #FFEEEE; 
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+    justify-content: center;
+  text-align:center;
+  font-size:30px;
+}
+.ach h2{
+  padding-top:50px;
+}
+.achi{
+ justify-content:center;
+ min-height:75vh;
+  border-collapse:collapse;
+  margin:85px 150px;
+  font-size:20px;
+  min-width:80%;
+  border-radius: 5px 5px 0 0;
+ overflow:hidden; 
+ box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+.achi thead tr{
+  background-color:#e65245;
+  color:#f0ffff;
+  text-align:center;
+  font-weight:bold;
+}
+.achi thead th,
+.achi thead td{
+padding: 20px 25px;
+}
+.achi tbody tr,
+.achi tbody td{
+padding: 15px 20px;
+}
+
+.achi tbody tr:last-of-type {
+  border-bottom: 5px solid #e65245;
+}
+.achi tbody tr {
+  border-bottom: 3px dotted #f0ffff;
+}
+.lorange{
+  background-color: 	coral;
+}
+.yellow{
+  background-color: 		#FFFF00;
+}
+.gray{
+  background-color: 	#C0C0C0;
+}
+.blue{
+  background-color: 	#ffb6c1;
+}
+.green{
+  background-color: #00FF7F;
+}
+.achmid{
+ padding-bottom: 30px;  
+ background: #FFEEEE; 
+ background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+ background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+   
+  text-align:center;
+  font-size:30px; 
+}
+.hmid{
+  justify-content:center;
+  min-height:75vh;
+   border-collapse:collapse;
+   margin:110px 120px;
+   font-size:20px;
+   min-width:85%;
+   border-radius: 5px 5px 0 0;
+  overflow:hidden; 
+  box-shadow:0 0 20px rgba(0,0,0,0.15);
+ }
+ .hmid thead tr{
+   background-color:#e65245;
+   color:#f0ffff;
+   text-align:center;
+   font-weigth:bold;
+ }
+ .hmid thead th,
+ .hmid thead td{
+ padding: 20px 25px;
+ }
+ .hmid tbody tr:last-of-type {
+   border-bottom: 5px solid #e65245;
+ }
+ .rated{
+   background-color: 		#00ffff;
+ }
+ .ontop{
+   background-color: 			#f0ffff;
+ }
+ .wadu{
+   background-color: 	#00ff00;
+ }
+ .de{
+   background-color: 	#ffb6c1;
+ }
+.gallery{
+  background: #FFEEEE; 
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+    
+ overflow-x: hidden;
+ min-height: 100vh;
+  box-sizing:border-box;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.main{
+  justify-content: center;
+  align-items:center;
+  margin-top:10px;
+  width:100vw;
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+  column-gap: 10px;
+  row-gap:10px;
+}
+.main img{
+  width:300px;
+  height:300px;
+  object-fit:cover;
+  object-position: center;
+  transition:.5s;
+}
+.main img:hover{
+  filter: brightness(75%);
+}
+.hiii{ 
+  background: #FFEEEE; 
+background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+  
+  width:100%;
+  margin:auto;
+  text-align: center;
+  padding-bottom:50px;
+}
+.shop img{
+  height:150px;
+  padding:10px;
+  opacity: .8;
+  cursor:pointer;
+}
+.shop img:hover{
+  opacity: 1;
+}
+.shop{
+  display: flex;
+  padding-left: 18%;
+}
+.bimage{
+  padding-top:30px;
+  cursor: pointer;
+  display:inline-block;
+  padding-left:30px;
+}
+.bimage img{
+  width:500px;
+  height: 600px;
+}
+.bimage h3{
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.oshop img{
+  width:125px;
+  height:150px;
+  padding:10px;
+  opacity: .8;
+  cursor:pointer;
+}
+.oshop img:hover{
+  opacity: 1;
+}
+.oshop{
+  display: flex;
+  padding-left: 17%;
+}
+.dshop img{
+  width:125px;
+  height:150px;
+  padding:10px;
+  opacity: .8;
+  cursor:pointer;
+}
+.dshop img:hover{
+  opacity: 1;
+}
+.dshop{
+  display: flex;
+  padding-left: 18.5%;
+}
+.cshop img{
+  width:125px;
+  height:150px;
+  padding:10px;
+  opacity: .8;
+  cursor:pointer;
+}
+.cshop img:hover{
+  opacity: 1;
+}
+.cshop{
+  display: flex;
+  padding-left: 17%;
+}
+.bagshop img{
+  width:125px;
+  height:150px;
+  padding:10px;
+  opacity: .8;
+  cursor:pointer;
+}
+.bagshop img:hover{
+  opacity: 1;
+}
+.bagshop{
+  display: flex;
+  padding-left: 15.5%;
+}
+.preorder-btn{
+  display: inline-block;
+  text-decoration: none;
+  background-color:#00cdac ;
+  color:#f0ffff;
+  border: 2px solid #00cdac;
+  border-radius: 35px;
+  padding:12px 34px;
+  font-size: 20px;
+  position: relative;
+ cursor: pointer;
+}
+.preorder-btn:hover{
+border:3px solid 	#e65245;
+background: 		#e65245;
+transition: .5s;
+}
+.okbtn{
+  padding-top:3%;
+}
+.container{
+  background: #FFEEEE; 
+background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+justify-content: center;
+  margin:auto;
+  padding-top:50px;
+  text-align: center;
+  padding-bottom:50px;
+  padding-right:8px;
+  padding-left: 8px;
+  display: flex;
+ flex-wrap: wrap;
+}
+.card{
+  background-color: #f0ffff;
+  width:450px;
+  height:885px;
+  margin:10px;
+  border-radius: 15px;
+}
+.shifu-image{
+background-image: url(file:///C:/Users/Dell/Desktop/shifu.jpg.jpg);
+ height:400px;
+ width:450px;
+ margin-bottom:20px;
+ border-radius: 15px 15px 0 0;
+ background-size: cover;
+
+}
+.rated-image{
+  background-image: url(file:///C:/Users/Dell/Desktop/rated.jpg.jpg);
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+   height:400px;
+   width:450px;
+   margin-bottom:20px;
+  
+  }
+  .ontop-image{
+    background-image: url(file:///C:/Users/Dell/Desktop/ontop.jpg.jpg);
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+     height:400px;
+     width:450px;
+     margin-bottom:20px;
+    
+    }
+    .illusion-image{
+      background-image: url(file:///C:/Users/Dell/Desktop/illu.jpg);
+      border-radius: 15px 15px 0 0;
+      background-size: cover;
+       height:400px;
+       width:450px;
+       margin-bottom:20px;
+      }
+      .frag-image{
+        background-image: url(file:///C:/Users/Dell/Desktop/fragggg.jpg);
+        border-radius: 15px 15px 0 0;
+        background-size: cover;
+         height:400px;
+         width:450px;
+         margin-bottom:20px;
+        
+        }
+        .achyut-image{
+          background-image: url(file:///C:/Users/Dell/Desktop/achyut.jpg.jpg);
+          border-radius: 15px 15px 0 0;
+          background-size: cover;
+           height:400px;
+           width:450px;
+           margin-bottom:20px;
+          }
+.card p{
+  padding:20px;
+}
+.card:hover{
+  background-color: black;
+  color:blanchedalmond;
+  cursor:pointer;
+  transform: scale(1.03);
+  transition: .5s;
+}
+.de-detail{
+  background: #FFEEEE; 
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+  justify-content: center;
+    margin:auto;
+    padding-top:50px;
+    text-align: center;
+    padding-bottom:50px;
+    padding-right:8px;
+    padding-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.DEDE{
+  background-color: #f0ffff;
+  width:520px;
+  height:1275px;
+  margin:10px;
+  border-radius: 15px;
+}
+.DEDE p{
+  padding:20px;
+}
+.DEDE:hover{
+  background-color: black;
+  color:blanchedalmond;
+  cursor:pointer;
+  transform: scale(1.03);
+  transition: .5s;
+}
+.delogo{
+  background-image: url(file:///C:/Users/Dell/Desktop/ggg.jpg.jpg);
+   height:500px;
+   width:520px;
+   margin-bottom:20px;
+   border-radius: 15px 15px 0 0;
+   background-size: cover;
+  
+  }
+.connect{
+  background: #FFEEEE; 
+background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  
+background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+  width:100%;
+  margin:auto;
+  padding-top:50px;
+  text-align: center;
+  padding-bottom:10px;
+justify-content: center;
+}
+.contact-col input , .contact-col textarea{
+  width:50%;
+  padding:15px;
+  margin-bottom:17px;
+  outline:none;
+  border:2px solid #e65245;
+resize:vertical;
+
+}
+.contact-col textarea{
+  height:200px;
+}
+.submit-btn{
+  width:400px;
+height:42px;
+background-color:#e65245;
+border-radius:42px;
+
+outline:none;
+font-size:25px;
+color:#f0ffff;
+box-shadow: 4px 4px 8px var(--Shadow1), -4px -4px 8px var(--Shadow2);
+margin:16px;
+
+
+}
+.small-card{
+  padding-top:3%;
+  background-color: #f0ffff;
+  width:500px;
+  height:550px;
+  margin:10px;
+  border-radius: 15px;
+  
+}
+.small-card p{
+  padding:20px;
+}
+.small-card:hover{
+  background-color: black;
+  color:blanchedalmond;
+  cursor:pointer;
+  transform: scale(1.03);
+  transition: .5s;
+}
+
+
+
+  
+
+
+
+
+</style>
