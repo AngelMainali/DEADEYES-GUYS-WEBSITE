@@ -10,7 +10,7 @@ font-family: " Times New Roman" , sans-serif;
 .header{
  min-height: 100vh;
    width:100%;
-   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(file:///C:/Users/Dell/Desktop/pic1.jpg);
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("deimages/img1.jpg");
   background-position: center;
   background-size: cover;
   position:relative;
@@ -134,16 +134,14 @@ overflow: hidden;
 
 }
 .footer h4{
-  margin-bottom:  25px;
+  margin-bottom:25px;
   margin-top: 20px;
   font-weight:600;
 }
 .icons i{
-  
   color: #00cdac;
   margin: 13px;
   cursor:pointer;
- 
   width:35px;
   height:85px;
 }
@@ -156,7 +154,7 @@ overflow: hidden;
 .team-header{
   height:60vh;
   width:100%;
-  background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(file:///C:/Users/Dell/Desktop/team.jpg);
+  background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(  "deimages/imgv.jpg");
   background-size:cover;
   background-position: center;
   text-align:center;
@@ -164,7 +162,7 @@ overflow: hidden;
   font-size:40px;
 }
 .team-header h1{
-  padding-top:85px;
+  padding-top:75px;
 }
 .table{
   padding-bottom:30px;
@@ -193,7 +191,7 @@ overflow: hidden;
   background-color:#e65245;
   color:#f0ffff;
   text-align:center;
-  font-weigth:bold;
+  font-weight:bold;
 }
 .roaster thead th,
 .roaster thead td{
@@ -235,7 +233,7 @@ background: linear-gradient(to right, #DDEFBB, #FFEEEE);
   background-color:#e65245;
   color:#f0ffff;
   text-align:center;
-  font-weigth:bold;
+  font-weight:bold;
 }
 .player thead th,
 .player thead td{
@@ -277,7 +275,7 @@ background: linear-gradient(to right, #DDEFBB, #FFEEEE);
   background-color:#e65245;
   color:#f0ffff;
   text-align:center;
-  font-weigth:bold;
+  font-weight:bold;
 }
 .manage thead th,
 .manage thead td{
@@ -320,7 +318,7 @@ padding: 20px 25px;
   background-color:#e65245;
   color:#f0ffff;
   text-align:center;
-  font-weigth:bold;
+  font-weight:bold;
 }
 .creator thead th,
 .creator thead td{
@@ -338,7 +336,7 @@ padding: 20px 25px;
 .ach-header{
   height:60vh;
   width:100%;
-  background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(file:///C:/Users/Dell/Desktop/pic3.jpg);
+  background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(  "deimages/imgw.jpg" );
   background-size:cover;
   background-position: center;
   text-align:center;
@@ -431,7 +429,7 @@ padding: 15px 20px;
    background-color:#e65245;
    color:#f0ffff;
    text-align:center;
-   font-weigth:bold;
+   font-weight:bold;
  }
  .hmid thead th,
  .hmid thead td{
@@ -618,7 +616,7 @@ justify-content: center;
   border-radius: 15px;
 }
 .shifu-image{
-background-image: url(file:///C:/Users/Dell/Desktop/shifu.jpg.jpg);
+background-image: url("deimages/img68.jpg");
  height:400px;
  width:450px;
  margin-bottom:20px;
@@ -627,7 +625,7 @@ background-image: url(file:///C:/Users/Dell/Desktop/shifu.jpg.jpg);
 
 }
 .rated-image{
-  background-image: url(file:///C:/Users/Dell/Desktop/rated.jpg.jpg);
+  background-image: url("deimages/img69.jpg");
   border-radius: 15px 15px 0 0;
   background-size: cover;
    height:400px;
@@ -636,7 +634,7 @@ background-image: url(file:///C:/Users/Dell/Desktop/shifu.jpg.jpg);
   
   }
   .ontop-image{
-    background-image: url(file:///C:/Users/Dell/Desktop/ontop.jpg.jpg);
+    background-image: url("deimages/img70.jpg");
     border-radius: 15px 15px 0 0;
     background-size: cover;
      height:400px;
@@ -645,7 +643,7 @@ background-image: url(file:///C:/Users/Dell/Desktop/shifu.jpg.jpg);
     
     }
     .illusion-image{
-      background-image: url(file:///C:/Users/Dell/Desktop/illu.jpg);
+      background-image: url("deimages/img71.jpg");
       border-radius: 15px 15px 0 0;
       background-size: cover;
        height:400px;
@@ -653,7 +651,7 @@ background-image: url(file:///C:/Users/Dell/Desktop/shifu.jpg.jpg);
        margin-bottom:20px;
       }
       .frag-image{
-        background-image: url(file:///C:/Users/Dell/Desktop/fragggg.jpg);
+        background-image: url("deimages/img72.jpg");
         border-radius: 15px 15px 0 0;
         background-size: cover;
          height:400px;
@@ -662,7 +660,7 @@ background-image: url(file:///C:/Users/Dell/Desktop/shifu.jpg.jpg);
         
         }
         .achyut-image{
-          background-image: url(file:///C:/Users/Dell/Desktop/achyut.jpg.jpg);
+          background-image: url("deimages/img73.jpg");
           border-radius: 15px 15px 0 0;
           background-size: cover;
            height:400px;
@@ -712,7 +710,7 @@ background-image: url(file:///C:/Users/Dell/Desktop/shifu.jpg.jpg);
   transition: .5s;
 }
 .delogo{
-  background-image: url(file:///C:/Users/Dell/Desktop/ggg.jpg.jpg);
+  background-image: url("deimages/img21.jpg");
    height:500px;
    width:520px;
    margin-bottom:20px;
@@ -776,12 +774,4 @@ margin:16px;
   transform: scale(1.03);
   transition: .5s;
 }
-
-
-
-  
-
-
-
-
 </style>
